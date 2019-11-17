@@ -1,3 +1,6 @@
+# Ingest weather data, clean it, make basic plots
+# TODO: standardize input for real files, test out on overnight data
+
 library(readr)
 library(lubridate)
 library(ggplot2)
