@@ -1,3 +1,7 @@
+# Local project files
+*.Rproj
+.idea/
+
 # History files
 .Rhistory
 .Rapp.history
