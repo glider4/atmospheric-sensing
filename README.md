@@ -4,7 +4,7 @@ meteorological characteristics.
 
 ### Tech, goals, strategy
 
-![weatherbit](https://www.github.com/mathemacode/atmospheric-sensing/master/pics/sparkfun_photo.jpg)
+![weatherbit](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics/sparkfun_photo.jpg)
 
 ### Electronics & parts list
 
