@@ -32,6 +32,9 @@ to my PC via USB.
 
 ### Some good coding applications, resources, etc
 - Tera Term, for serial connection with PC and great auto-logging capabilities
+    - **IMPORTANT** If you use the auto logging function in Tera Term, it does NOT put a comma between 
+    the date and what's being logged!  I compensated by setting my WeatherBit to log like ",temp,press,humid"
+    (note leading comma)
 - Microsoft MakeCode app for Windows, highly recommended to quicken unboxing to first use process
 - SparkFun has multiple guides on the micro:Climate kit and MicroBit - note comments section for bugs found
 
