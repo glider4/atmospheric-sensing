@@ -45,5 +45,5 @@ to my PC via USB.
 - My MakeCode app will connect to the MicroBit for uploading code, BUT, not for live data viewing (all sensors read 0)
 - The WeatherBit actually reads finer details than what SparkFun's integer-based code suggests
     - You can use just temperature/100 instead of integer divison in the JavaScript code
-- **MakeCode requires an extension to use the temperature as an input (code format is weather.temperature), 
+- **MakeCode requires an extension to use temp,press,humidity,etc as an input (code format is weather.temperature), 
 etc.  Left side of app Advanced --> Extensions, search for weatherbit**
