@@ -20,7 +20,7 @@ while (logging_data == -1) {
     BaudRate.BaudRate9600
     )
     serial.writeLine("")
-    serial.writeLine("temperature (C), humidity (% relative), pressure (hPa)")
+    serial.writeLine("date, temperature (C), humidity (% relative), pressure (hPa)")
     logging_data = 0
     basic.showLeds(`
         # . . . #
@@ -70,7 +70,7 @@ basic.forever(function () {
             `)
         row = "," + Math.idiv(weatherbit.temperature(), 100) + "," + Math.idiv(weatherbit.humidity(), 1024) + "," + Math.idiv(weatherbit.pressure(), 25600)
         serial.writeLine(row)
-        basic.pause(1 * 10000)
+        basic.pause(1 * 30000)
         basic.showLeds(`
             . . # . .
             . . . . .
