@@ -2,6 +2,7 @@
 This project is based off of MicroBit's WeatherBit extension, which has sensors to read a variety of
 meteorological characteristics.
 
+
 ### Tech, goals, strategy
 The idea behind this project was to build a weather reporting station that could sense a 
 number of basic atmospheric indicators like pressure, temperature, and relative humidity, and
@@ -15,10 +16,14 @@ distance of a PC.  The OpenLog integration is nice on the WeatherBit, but physic
 MicroSD in and out whenever I want to see data is far too much of a hassle when I can serial straight
 to my PC via USB.
 
+
 ### TODOs / Current state of project
 TODO: Increase granularity of temperature measurement (see first obvservational ingestion plots)
 
 TODO: Figure out how to rotate log files so that a new .txt is created every... day? week?
+
+TODO: Do I have enough data to extrapolate what I need to plot a Skew-T ?
+
 
 ### Electronics & parts list
 [WeatherBit on Sparkfun.com](https://www.sparkfun.com/search/results?term=weatherbit)
@@ -37,6 +42,7 @@ TODO: Figure out how to rotate log files so that a new .txt is created every... 
 - SparkFun CCS811 Air Quality breakout board
 - MicroSD card and adapter, if you want to go the OpenLog route
 
+
 ### Recommended coding applications, resources, etc
 - PyCharm or Anaconda Spyder (included with Anaconda Navigator download)
 - Tera Term, for serial connection with PC and great auto-logging capabilities
@@ -46,6 +52,7 @@ TODO: Figure out how to rotate log files so that a new .txt is created every... 
 - Microsoft MakeCode app for Windows, highly recommended to quicken unboxing to first use process
     - note that it can "block-ify" Javascript code, and you can develop using blocks or writing JS, it auto converts
 - SparkFun has multiple guides on the micro:Climate kit and MicroBit - note comments section for bugs found
+
 
 ### Things that were not obvious during initial setup
 - OpenLog seems to purge its logs on the SD card if I just rip the USB out
@@ -59,3 +66,10 @@ TODO: Figure out how to rotate log files so that a new .txt is created every... 
     - You can use just temperature/100 instead of integer divison in the JavaScript code
 - **MakeCode requires an extension to use temp,press,humidity,etc as an input (code format is weather.temperature), 
 etc.  Left side of app Advanced --> Extensions, search for weatherbit**
+
+### Results - Import 1
+Impressive!  Temperature really needs more granularity at this time scale, but I think in the long run it'll work out.
+
+A little bit of ggplot fanciness and:
+
+![import1result](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/import_11-18-2019/temp_humid_press_plot.png)

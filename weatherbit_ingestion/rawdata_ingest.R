@@ -15,10 +15,15 @@ View(raw_data)
 
 
 # Temperature
-ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue') + ggtitle("Temperature (C)")
+temp_plot <- ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue', size=2) + ggtitle("Temperature (C)")
 
 # Humidity
-ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen') + ggtitle("Relative Humidity %")
+humid_plot <- ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen', size=2) + ggtitle("Relative Humidity %")
 
 # Pressure
-ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange') + ggtitle("Pressure in hPa")
+press_plot <- ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange', size=2) + ggtitle("Pressure in hPa")
+
+require(gridExtra)
+plot1 <- temp_plot
+plot2 <- humid_plot
+grid.arrange(temp_plot, humid_plot, press_plot, ncol=3)
