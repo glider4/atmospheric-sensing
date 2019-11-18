@@ -17,10 +17,13 @@ to my PC via USB.
 
 ### TODOs / Current state of project
 TODO: Increase granularity of temperature measurement (see first obvservational ingestion plots)
+
 TODO: Figure out how to rotate log files so that a new .txt is created every... day? week?
 
 ### Electronics & parts list
-![weatherbit](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics/sparkfun_photo.jpg)
+[WeatherBit on Sparkfun.com](https://www.sparkfun.com/search/results?term=weatherbit)
+
+![weatherbit](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/sparkfun_photo.jpg)
 
 - SparkFun micro:Climate Kit:
     - MicroBit
