@@ -62,12 +62,13 @@ TODO: Do I have enough data to extrapolate what I need to plot a Skew-T ?
 - Also the pin settings to use OpenLog were in the SparkFun guide and worked, but remember to change if using serial USB
 - Serial connection requires special MicroBit drivers (easy google to find, but nowhere in tutorials)
 - My MakeCode app will connect to the MicroBit for uploading code, BUT, not for live data viewing (all sensors read 0)
-- The WeatherBit actually reads finer details than what SparkFun's integer-based code suggests
-    - You can use just temperature/100 instead of integer divison in the JavaScript code
 - **MakeCode requires an extension to use temp,press,humidity,etc as an input (code format is weather.temperature), 
 etc.  Left side of app Advanced --> Extensions, search for weatherbit**
+- The WeatherBit actually reads finer details than what SparkFun's integer-based code suggests
+    - You can use just temperature/100 instead of integer divison in the JavaScript code
 
-### Results - Import 1
+
+## Results - Import 1
 Impressive!  Temperature really needs more granularity at this time scale, but I think in the long run it'll work out.
 
 A little bit of ggplot fanciness and:
