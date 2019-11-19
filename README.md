@@ -22,8 +22,6 @@ TODO: Increase granularity of temperature measurement (see first obvservational 
 
 TODO: Figure out how to rotate log files so that a new .txt is created every... day? week?
 
-TODO: Do I have enough data to extrapolate what I need to plot a Skew-T ?
-
 
 ### Electronics & parts list
 [WeatherBit on Sparkfun.com](https://www.sparkfun.com/search/results?term=weatherbit)
