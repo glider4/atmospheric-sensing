@@ -26,7 +26,7 @@ TODO: Figure out how to connect CO2 sensor to WeatherBit, or through Arduino Red
 ### Electronics & parts list
 [WeatherBit on Sparkfun.com](https://www.sparkfun.com/search/results?term=weatherbit)
 
-![https://www.sparkfun.com/search/results?term=weatherbit](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/sparkfun_photo.jpg)
+![weatherbit](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/sparkfun_photo.jpg)
 
 - SparkFun micro:Climate Kit:
     - MicroBit
