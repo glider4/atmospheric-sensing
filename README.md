@@ -78,7 +78,7 @@ A little bit of ggplot fanciness and:
 ## Granularity fix
 With WeatherBit running on all decimals (Nov 18th 2019 - just for a little while):
 
-![granular_result](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/granularity_fix_11-18-2019/granular_with_dewpoint_4.png)
+![granular_result](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/granularity_fix_11-18-2019/granular_with_dewpoint_4.png | width=300)
 
 This increases the file size by a lot, and for the life of me I couldn't get a good round function to 
 work properly in JavaScript and load onto the board.
