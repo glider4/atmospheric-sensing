@@ -39,16 +39,16 @@ df <- df %>%
 # ====================================================================
 
 # Temperature
-temp_plot <- ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue', size=1.5) + ggtitle("Temperature (C)")
+temp_plot <- ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue', size=1) + ggtitle("Temperature (C)")
 
 # Humidity
-humid_plot <- ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen', size=1.5) + ggtitle("Relative Humidity %")
+humid_plot <- ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen', size=1) + ggtitle("Relative Humidity %")
 
 # Pressure
-press_plot <- ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange', size=1.5) + ggtitle("Pressure (hPa)")
+press_plot <- ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange', size=1) + ggtitle("Pressure (hPa)")
 
 # Dewpoint
-dew_plot <- ggplot(df, aes(x=date, y=`dewpnt_c`)) + geom_line(color='darkred', size=1.5) + ggtitle("Dewpoint (C)")
+dew_plot <- ggplot(df, aes(x=date, y=`dewpnt_c`)) + geom_line(color='darkred', size=1) + ggtitle("Dewpoint (C)")
 
 # Temp, Humid%, Press, Dewpoint side-by-side
 require(gridExtra)
