@@ -18,13 +18,13 @@ raw_data$date <- gsub('\\[|\\]', '', raw_data$date)   # Remove TeraTerm's [ ] fo
 raw_data$date <- ymd_hms(raw_data$date)               # Implement Lubridate for datetimes
 
 # Temperature
-temp_plot <- ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue', size=2) + ggtitle("Temperature (C)")
+temp_plot <- ggplot(raw_data, aes(x=date, y=`temp_c`)) + geom_line(color='blue', size=1.5) + ggtitle("Temperature (C)")
 
 # Humidity
-humid_plot <- ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen', size=2) + ggtitle("Relative Humidity %")
+humid_plot <- ggplot(raw_data, aes(x=date, y=`rel_humid`)) + geom_line(color='darkgreen', size=1.5) + ggtitle("Relative Humidity %")
 
 # Pressure
-press_plot <- ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange', size=2) + ggtitle("Pressure (hPa)")
+press_plot <- ggplot(raw_data, aes(x=date, y=`press_hpa`)) + geom_line(color='orange', size=1.5) + ggtitle("Pressure (hPa)")
 
 # Temp, Humid%, Press side-by-side
 require(gridExtra)

@@ -18,9 +18,9 @@ to my PC via USB.
 
 
 ### TODOs / Current state of project
-TODO: Increase granularity of temperature measurement (see first obvservational ingestion plots)
-
 TODO: Figure out how to rotate log files so that a new .txt is created every... day? week?
+
+TODO: Figure out how to connect CO2 sensor to WeatherBit, or through Arduino RedBoard
 
 
 ### Electronics & parts list
@@ -67,8 +67,18 @@ etc.  Left side of app Advanced --> Extensions, search for weatherbit**
 
 
 ## Results - Import 1
-Impressive!  Temperature really needs more granularity at this time scale, but I think in the long run it'll work out.
+Impressive!  Temperature really needs more granularity at this time scale, (update - granularity has been increased) 
+but I think in the long run it'll work out.
 
 A little bit of ggplot fanciness and:
 
 ![import1result](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/import_11-18-2019/temp_humid_press_plot.png)
+
+
+## Granularity fix
+With WeatherBit running on all decimals (Nov 18th 2019 - just for a little while):
+
+![granular_result](https://github.com/mathemacode/atmospheric-sensing/blob/master/pics_plots/granularity_fix_11-18-2019/granularity_sample.png)
+
+This increases the file size by a lot, and for the life of me I couldn't get a good round function to 
+work properly in JavaScript and load onto the board.
