@@ -17,6 +17,9 @@ MicroSD in and out whenever I want to see data is far too much of a hassle when 
 to my PC via USB.
 
 ### Latest Temperature (C) plot - auto generated using R
+
+Data recorded in Massachusetts, USA, and plotted with ggplot2.
+
 ![temp_plot](https://github.com/mathemacode/atmospheric-sensing/blob/master/weatherbit_ingestion/latest_temp_plot.png)
 
 ### TODOs / Current state of project
