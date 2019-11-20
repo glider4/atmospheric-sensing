@@ -16,6 +16,8 @@ distance of a PC.  The OpenLog integration is nice on the WeatherBit, but physic
 MicroSD in and out whenever I want to see data is far too much of a hassle when I can serial straight
 to my PC via USB.
 
+### Latest Temperature (C) plot - auto generated using R
+![temp_plot](https://github.com/mathemacode/atmospheric-sensing/blob/master/weatherbit_ingestion/latest_temp_plot.png)
 
 ### TODOs / Current state of project
 TODO: Figure out how to rotate log files so that a new .txt is created every... day? week?

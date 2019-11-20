@@ -53,3 +53,7 @@ dew_plot <- ggplot(df, aes(x=date, y=`dewpnt_c`)) + geom_line(color='darkred', s
 # Temp, Humid%, Press, Dewpoint side-by-side
 require(gridExtra)
 grid.arrange(temp_plot, humid_plot, press_plot, dew_plot, ncol=4)
+
+
+# Export latest plot for ReadMe
+ggsave("latest_temp_plot.png", plot = temp_plot)
