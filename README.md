@@ -22,6 +22,14 @@ TODO: Figure out how to rotate log files so that a new .txt is created every... 
 
 TODO: Figure out how to connect CO2 sensor to WeatherBit, or through Arduino RedBoard
 
+TODO: Use soil temperature sensor (waterproof) for additional temp reading?
+
+TODO: Initialize Arduino RedBoard (waiting on USB cable)
+
+TODO: Extrapolate more values in `extrapolate.R`
+
+TODO: Organize `weatherbit_ingestion` better as more raw data files get added
+
 
 ### Electronics & parts list
 [WeatherBit on Sparkfun.com](https://www.sparkfun.com/search/results?term=weatherbit)
@@ -57,7 +65,7 @@ TODO: Figure out how to connect CO2 sensor to WeatherBit, or through Arduino Red
     - Similar note: you must stop the writing process before taking out USB, and I suspect this is why
     the SparkFun team went the extra mile to code in a button to start and stop the process.  Power on/off to
     start/stop the writing will not work with OpenLog (from what I can tell so far)
-- Also the pin settings to use OpenLog were in the SparkFun guide and worked, but remember to change if using serial USB
+- Also the pin settings to use OpenLog were in the SparkFun guide and worked, remember to change if using serial USB
 - Serial connection requires special MicroBit drivers (easy google to find, but nowhere in tutorials)
 - My MakeCode app will connect to the MicroBit for uploading code, BUT, not for live data viewing (all sensors read 0)
 - **MakeCode requires an extension to use temp,press,humidity,etc as an input (code format is weather.temperature), 
