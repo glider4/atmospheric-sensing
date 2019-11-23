@@ -7,7 +7,7 @@ library(ggplot2)
 
 # Read file:
 # ====================================================================
-raw_data <- read_csv("weatherlog_2_test_decimals.txt", skip = 1)
+raw_data <- read_csv("weatherlog_decimal_test.txt", skip = 1)
 # ====================================================================
 
 # Clean up, prepare for plots / extrapolation
